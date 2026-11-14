@@ -1,466 +1,541 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONLY BOOKS - Online Book Store</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a href="#" class="logo">
+          <i class="fa-solid fa-book-open"></i>
+          ONLY<span>BOOKS</span>
+        </a>
 
-                                <!DOCTYPE html>
-                                <html lang="uz">
-                                <head>
-                                    <meta charset="UTF-8">
-                                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                    <title>ONLY BOOKS - Online Book Store</title>
-                                    <link rel="stylesheet" href="style.css">
-                                    <link rel="preconnect" href="https://fonts.googleapis.com">
-                                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                                    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-                                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-                                </head>
-                                <body>
+        <nav id="nav">
+          <a href="#home">Bosh sahifa</a>
+          <a href="#about">Biz haqimizda</a>
+          <a href="#categories">Kategoriyalar</a>
+          <a href="#books">Kitoblar</a>
+          <a href="#gallery">Galereya</a>
+          <a href="#contact">Aloqa</a>
+        </nav>
 
-                                    <header class="header">
-                                        <div class="container nav">
-                                            <a href="#" class="logo">
-                                                <i class="fa-solid fa-book-open"></i>
-                                                ONLY<span>BOOKS</span>
-                                            </a>
+        <div class="nav-right">
+          <button class="cart-button" id="cartButton">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Savatcha
+            <span id="cartCount">0</span>
+          </button>
 
-                                            <nav id="nav">
-                                                <a href="#home">Bosh sahifa</a>
-                                                <a href="#about">Biz haqimizda</a>
-                                                <a href="#categories">Kategoriyalar</a>
-                                                <a href="#books">Kitoblar</a>
-                                                <a href="#gallery">Galereya</a>
-                                                <a href="#contact">Aloqa</a>
-                                            </nav>
+          <button class="menu-button" id="menuButton">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
 
-                                            <div class="nav-right">
-                                                <button class="cart-button" id="cartButton">
-                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                    Savatcha
-                                                    <span id="cartCount">0</span>
-                                                </button>
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <span class="hero-label">KITOBLAR OLAMIGA XUSH KELIBSIZ</span>
+            <h1>Har bir kitob — <span>yangi bir olam.</span></h1>
+            <p>
+              Bilim olish, fikrlash va rivojlanish uchun eng yaxshi kitoblarni
+              ONLY BOOKS orqali toping.
+            </p>
+            <div class="hero-buttons">
+              <a href="#books" class="primary-button">Kitoblarni ko'rish</a>
+              <a href="#about" class="secondary-button">Batafsil</a>
+            </div>
+            <div class="hero-statistics">
+              <div>
+                <h3>500+</h3>
+                <p>Kitoblar</p>
+              </div>
+              <div>
+                <h3>1000+</h3>
+                <p>Mijozlar</p>
+              </div>
+              <div>
+                <h3>50+</h3>
+                <p>Kategoriyalar</p>
+              </div>
+            </div>
+          </div>
 
-                                                <button class="menu-button" id="menuButton">
-                                                    <i class="fa-solid fa-bars"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </header>
+          <div class="hero-image">
+            <img
+              src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1000&q=85"
+              alt="Kitoblar kutubxonasi"
+            />
+          </div>
+        </div>
+      </section>
 
-                                    <main>
+      <section class="about section" id="about">
+        <div class="container about-content">
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=900&q=85"
+              alt="Kitob o'qiyotgan inson"
+            />
+          </div>
 
-                                        <section class="hero" id="home">
-                                            <div class="container hero-content">
-                                                <div class="hero-text">
-                                                    <span class="hero-label">KITOBLAR OLAMIGA XUSH KELIBSIZ</span>
-                                                    <h1>Har bir kitob — <span>yangi bir olam.</span></h1>
-                                                    <p>
-                                                        Bilim olish, fikrlash va rivojlanish uchun eng yaxshi
-                                                        kitoblarni ONLY BOOKS orqali toping.
-                                                    </p>
-                                                    <div class="hero-buttons">
-                                                        <a href="#books" class="primary-button">Kitoblarni ko'rish</a>
-                                                        <a href="#about" class="secondary-button">Batafsil</a>
-                                                    </div>
-                                                    <div class="hero-statistics">
-                                                        <div>
-                                                            <h3>500+</h3>
-                                                            <p>Kitoblar</p>
-                                                        </div>
-                                                        <div>
-                                                            <h3>1000+</h3>
-                                                            <p>Mijozlar</p>
-                                                        </div>
-                                                        <div>
-                                                            <h3>50+</h3>
-                                                            <p>Kategoriyalar</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
+          <div class="about-text">
+            <span class="section-label">BIZ HAQIMIZDA</span>
+            <h2>Kitob — eng yaxshi <span>do'st.</span></h2>
+            <p>
+              ONLY BOOKS — kitobsevar insonlar uchun yaratilgan zamonaviy onlayn
+              kitob do'koni.
+            </p>
+            <p>
+              Biz sizga turli yo'nalishdagi qiziqarli, foydali va sifatli
+              kitoblarni taklif qilamiz. Bizning maqsadimiz ko'proq insonlarni
+              kitob o'qishga undashdir.
+            </p>
+            <a href="#books" class="primary-button">Kitob tanlash</a>
+          </div>
+        </div>
+      </section>
 
-                                                <div class="hero-image">
-                                                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1000&q=85" alt="Kitoblar kutubxonasi">
-                                                </div>
-                                            </div>
-                                        </section>
+      <section class="features">
+        <div class="container features-grid">
+          <div class="feature-card">
+            <i class="fa-solid fa-book"></i>
+            <h3>Katta tanlov</h3>
+            <p>Turli mavzulardagi yuzlab kitoblar.</p>
+          </div>
 
-                                        <section class="about section" id="about">
-                                            <div class="container about-content">
-                                                <div class="about-image">
-                                                    <img src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=900&q=85" alt="Kitob o'qiyotgan inson">
-                                                </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Tez yetkazish</h3>
+            <p>Buyurtmalaringizni qulay yetkazib berish.</p>
+          </div>
 
-                                                <div class="about-text">
-                                                    <span class="section-label">BIZ HAQIMIZDA</span>
-                                                    <h2>Kitob — eng yaxshi <span>do'st.</span></h2>
-                                                    <p>
-                                                        ONLY BOOKS — kitobsevar insonlar uchun yaratilgan
-                                                        zamonaviy onlayn kitob do'koni.
-                                                    </p>
-                                                    <p>
-                                                        Biz sizga turli yo'nalishdagi qiziqarli, foydali va
-                                                        sifatli kitoblarni taklif qilamiz. Bizning maqsadimiz
-                                                        ko'proq insonlarni kitob o'qishga undashdir.
-                                                    </p>
-                                                    <a href="#books" class="primary-button">Kitob tanlash</a>
-                                                </div>
-                                            </div>
-                                        </section>
+          <div class="feature-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Yuqori sifat</h3>
+            <p>Sifatli va foydali kitoblar to'plami.</p>
+          </div>
 
-                                        <section class="features">
-                                            <div class="container features-grid">
-                                                <div class="feature-card">
-                                                    <i class="fa-solid fa-book"></i>
-                                                    <h3>Katta tanlov</h3>
-                                                    <p>Turli mavzulardagi yuzlab kitoblar.</p>
-                                                </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-headset"></i>
+            <h3>Yordam xizmati</h3>
+            <p>Savollaringizga javob berishga tayyormiz.</p>
+          </div>
+        </div>
+      </section>
 
-                                                <div class="feature-card">
-                                                    <i class="fa-solid fa-truck-fast"></i>
-                                                    <h3>Tez yetkazish</h3>
-                                                    <p>Buyurtmalaringizni qulay yetkazib berish.</p>
-                                                </div>
+      <section class="categories section" id="categories">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">KATEGORIYALAR</span>
+            <h2>O'zingizga mos <span>yo'nalishni</span> tanlang</h2>
+            <p>
+              Turli mavzulardagi kitoblar bilan yangi bilimlarni kashf eting.
+            </p>
+          </div>
 
-                                                <div class="feature-card">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <h3>Yuqori sifat</h3>
-                                                    <p>Sifatli va foydali kitoblar to'plami.</p>
-                                                </div>
+          <div class="categories-grid">
+            <div class="category-card">
+              <i class="fa-solid fa-brain"></i>
+              <h3>Psixologiya</h3>
+              <p>O'zlikni anglash va fikrlash.</p>
+            </div>
 
-                                                <div class="feature-card">
-                                                    <i class="fa-solid fa-headset"></i>
-                                                    <h3>Yordam xizmati</h3>
-                                                    <p>Savollaringizga javob berishga tayyormiz.</p>
-                                                </div>
-                                            </div>
-                                        </section>
+            <div class="category-card">
+              <i class="fa-solid fa-clock"></i>
+              <h3>Tarix</h3>
+              <p>O'tmishdan saboq olish.</p>
+            </div>
 
-                                        <section class="categories section" id="categories">
-                                            <div class="container">
-                                                <div class="section-heading">
-                                                    <span class="section-label">KATEGORIYALAR</span>
-                                                    <h2>O'zingizga mos <span>yo'nalishni</span> tanlang</h2>
-                                                    <p>Turli mavzulardagi kitoblar bilan yangi bilimlarni kashf eting.</p>
-                                                </div>
+            <div class="category-card">
+              <i class="fa-solid fa-code"></i>
+              <h3>Dasturlash</h3>
+              <p>Texnologiya va IT olami.</p>
+            </div>
 
-                                                <div class="categories-grid">
-                                                    <div class="category-card">
-                                                        <i class="fa-solid fa-brain"></i>
-                                                        <h3>Psixologiya</h3>
-                                                        <p>O'zlikni anglash va fikrlash.</p>
-                                                    </div>
+            <div class="category-card">
+              <i class="fa-solid fa-heart"></i>
+              <h3>Motivatsiya</h3>
+              <p>Maqsad sari intilish.</p>
+            </div>
 
-                                                    <div class="category-card">
-                                                        <i class="fa-solid fa-clock"></i>
-                                                        <h3>Tarix</h3>
-                                                        <p>O'tmishdan saboq olish.</p>
-                                                    </div>
+            <div class="category-card">
+              <i class="fa-solid fa-flask"></i>
+              <h3>Ilm-fan</h3>
+              <p>Yangi bilim va kashfiyotlar.</p>
+            </div>
 
-                                                    <div class="category-card">
-                                                        <i class="fa-solid fa-code"></i>
-                                                        <h3>Dasturlash</h3>
-                                                        <p>Texnologiya va IT olami.</p>
-                                                    </div>
+            <div class="category-card">
+              <i class="fa-solid fa-feather"></i>
+              <h3>Badiiy adabiyot</h3>
+              <p>Qiziqarli hikoya va romanlar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                                                    <div class="category-card">
-                                                        <i class="fa-solid fa-heart"></i>
-                                                        <h3>Motivatsiya</h3>
-                                                        <p>Maqsad sari intilish.</p>
-                                                    </div>
+      <section class="books section" id="books">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">BIZNING KITOBLAR</span>
+            <h2>Eng mashhur <span>kitoblar</span></h2>
+            <p>O'zingiz yoqtirgan kitobni tanlang va savatchaga qo'shing.</p>
+          </div>
 
-                                                    <div class="category-card">
-                                                        <i class="fa-solid fa-flask"></i>
-                                                        <h3>Ilm-fan</h3>
-                                                        <p>Yangi bilim va kashfiyotlar.</p>
-                                                    </div>
+          <div class="books-grid">
+            <div class="book-card">
+              <div class="book-image">
+                <img
+                  src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=85"
+                  alt="Buyuk orzular kitobi"
+                />
+                <span class="book-badge">Mashhur</span>
+              </div>
+              <div class="book-info">
+                <span>Motivatsiya</span>
+                <h3>Buyuk orzular</h3>
+                <p>Orzularingiz sari ishonch bilan qadam tashlang.</p>
+                <div class="book-bottom">
+                  <b>45 000 so'm</b>
+                  <button
+                    class="add-book"
+                    data-name="Buyuk orzular"
+                    data-price="45000"
+                  >
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-                                                    <div class="category-card">
-                                                        <i class="fa-solid fa-feather"></i>
-                                                        <h3>Badiiy adabiyot</h3>
-                                                        <p>Qiziqarli hikoya va romanlar.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
+            <div class="book-card">
+              <div class="book-image">
+                <img
+                  src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=85"
+                  alt="Yangi imkoniyat kitobi"
+                />
+              </div>
+              <div class="book-info">
+                <span>Rivojlanish</span>
+                <h3>Yangi imkoniyat</h3>
+                <p>Hayotdagi yangi imkoniyatlarni kashf eting.</p>
+                <div class="book-bottom">
+                  <b>52 000 so'm</b>
+                  <button
+                    class="add-book"
+                    data-name="Yangi imkoniyat"
+                    data-price="52000"
+                  >
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-                                        <section class="books section" id="books">
-                                            <div class="container">
-                                                <div class="section-heading">
-                                                    <span class="section-label">BIZNING KITOBLAR</span>
-                                                    <h2>Eng mashhur <span>kitoblar</span></h2>
-                                                    <p>O'zingiz yoqtirgan kitobni tanlang va savatchaga qo'shing.</p>
-                                                </div>
+            <div class="book-card">
+              <div class="book-image">
+                <img
+                  src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=600&q=85"
+                  alt="Bilim kaliti kitobi"
+                />
+              </div>
+              <div class="book-info">
+                <span>Ta'lim</span>
+                <h3>Bilim kaliti</h3>
+                <p>Bilim bilan kelajak eshiklarini oching.</p>
+                <div class="book-bottom">
+                  <b>39 000 so'm</b>
+                  <button
+                    class="add-book"
+                    data-name="Bilim kaliti"
+                    data-price="39000"
+                  >
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-                                                <div class="books-grid">
+            <div class="book-card">
+              <div class="book-image">
+                <img
+                  src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=600&q=85"
+                  alt="Tarix sahifalari kitobi"
+                />
+              </div>
+              <div class="book-info">
+                <span>Tarix</span>
+                <h3>Tarix sahifalari</h3>
+                <p>Tarixdagi qiziqarli voqealarni o'rganing.</p>
+                <div class="book-bottom">
+                  <b>60 000 so'm</b>
+                  <button
+                    class="add-book"
+                    data-name="Tarix sahifalari"
+                    data-price="60000"
+                  >
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-                                                    <div class="book-card">
-                                                        <div class="book-image">
-                                                            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=85" alt="Buyuk orzular kitobi">
-                                                            <span class="book-badge">Mashhur</span>
-                                                        </div>
-                                                        <div class="book-info">
-                                                            <span>Motivatsiya</span>
-                                                            <h3>Buyuk orzular</h3>
-                                                            <p>Orzularingiz sari ishonch bilan qadam tashlang.</p>
-                                                            <div class="book-bottom">
-                                                                <b>45 000 so'm</b>
-                                                                <button class="add-book" data-name="Buyuk orzular" data-price="45000">
-                                                                    <i class="fa-solid fa-cart-plus"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+            <div class="book-card">
+              <div class="book-image">
+                <img
+                  src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=600&q=85"
+                  alt="Web Development kitobi"
+                />
+              </div>
+              <div class="book-info">
+                <span>Dasturlash</span>
+                <h3>Web Development</h3>
+                <p>Web dasturlash olamiga ilk qadamlaringiz.</p>
+                <div class="book-bottom">
+                  <b>75 000 so'm</b>
+                  <button
+                    class="add-book"
+                    data-name="Web Development"
+                    data-price="75000"
+                  >
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-                                                    <div class="book-card">
-                                                        <div class="book-image">
-                                                            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=85" alt="Yangi imkoniyat kitobi">
-                                                        </div>
-                                                        <div class="book-info">
-                                                            <span>Rivojlanish</span>
-                                                            <h3>Yangi imkoniyat</h3>
-                                                            <p>Hayotdagi yangi imkoniyatlarni kashf eting.</p>
-                                                            <div class="book-bottom">
-                                                                <b>52 000 so'm</b>
-                                                                <button class="add-book" data-name="Yangi imkoniyat" data-price="52000">
-                                                                    <i class="fa-solid fa-cart-plus"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+            <div class="book-card">
+              <div class="book-image">
+                <img
+                  src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=600&q=85"
+                  alt="O'zingni angla kitobi"
+                />
+              </div>
+              <div class="book-info">
+                <span>Psixologiya</span>
+                <h3>O'zingni angla</h3>
+                <p>O'z fikrlaringiz va imkoniyatlaringizni anglang.</p>
+                <div class="book-bottom">
+                  <b>48 000 so'm</b>
+                  <button
+                    class="add-book"
+                    data-name="O'zingni angla"
+                    data-price="48000"
+                  >
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-                                                    <div class="book-card">
-                                                        <div class="book-image">
-                                                            <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=600&q=85" alt="Bilim kaliti kitobi">
-                                                        </div>
-                                                        <div class="book-info">
-                                                            <span>Ta'lim</span>
-                                                            <h3>Bilim kaliti</h3>
-                                                            <p>Bilim bilan kelajak eshiklarini oching.</p>
-                                                            <div class="book-bottom">
-                                                                <b>39 000 so'm</b>
-                                                                <button class="add-book" data-name="Bilim kaliti" data-price="39000">
-                                                                    <i class="fa-solid fa-cart-plus"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+            <div class="book-card">
+              <div class="book-image">
+                <img
+                  src="https://images.unsplash.com/photo-1513001900722-370f803f498d?auto=format&fit=crop&w=600&q=85"
+                  alt="Kelajak sari kitobi"
+                />
+              </div>
+              <div class="book-info">
+                <span>Motivatsiya</span>
+                <h3>Kelajak sari</h3>
+                <p>Kelajagingizni bugundan boshlab yarating.</p>
+                <div class="book-bottom">
+                  <b>55 000 so'm</b>
+                  <button
+                    class="add-book"
+                    data-name="Kelajak sari"
+                    data-price="55000"
+                  >
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-                                                    <div class="book-card">
-                                                        <div class="book-image">
-                                                            <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=600&q=85" alt="Tarix sahifalari kitobi">
-                                                        </div>
-                                                        <div class="book-info">
-                                                            <span>Tarix</span>
-                                                            <h3>Tarix sahifalari</h3>
-                                                            <p>Tarixdagi qiziqarli voqealarni o'rganing.</p>
-                                                            <div class="book-bottom">
-                                                                <b>60 000 so'm</b>
-                                                                <button class="add-book" data-name="Tarix sahifalari" data-price="60000">
-                                                                    <i class="fa-solid fa-cart-plus"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+            <div class="book-card">
+              <div class="book-image">
+                <img
+                  src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?auto=format&fit=crop&w=600&q=85"
+                  alt="Sirli olam kitobi"
+                />
+              </div>
+              <div class="book-info">
+                <span>Badiiy adabiyot</span>
+                <h3>Sirli olam</h3>
+                <p>Hayratlanarli voqealar olamiga sayohat.</p>
+                <div class="book-bottom">
+                  <b>42 000 so'm</b>
+                  <button
+                    class="add-book"
+                    data-name="Sirli olam"
+                    data-price="42000"
+                  >
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                                                    <div class="book-card">
-                                                        <div class="book-image">
-                                                            <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=600&q=85" alt="Web Development kitobi">
-                                                        </div>
-                                                        <div class="book-info">
-                                                            <span>Dasturlash</span>
-                                                            <h3>Web Development</h3>
-                                                            <p>Web dasturlash olamiga ilk qadamlaringiz.</p>
-                                                            <div class="book-bottom">
-                                                                <b>75 000 so'm</b>
-                                                                <button class="add-book" data-name="Web Development" data-price="75000">
-                                                                    <i class="fa-solid fa-cart-plus"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+      <section class="quote-section">
+        <div class="container quote-content">
+          <i class="fa-solid fa-quote-left"></i>
+          <h2>Kitob o'qigan inson minglab hayotlarni yashaydi.</h2>
+          <p>Kitob — bilim va tafakkur manbai.</p>
+        </div>
+      </section>
 
-                                                    <div class="book-card">
-                                                        <div class="book-image">
-                                                            <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=600&q=85" alt="O'zingni angla kitobi">
-                                                        </div>
-                                                        <div class="book-info">
-                                                            <span>Psixologiya</span>
-                                                            <h3>O'zingni angla</h3>
-                                                            <p>O'z fikrlaringiz va imkoniyatlaringizni anglang.</p>
-                                                            <div class="book-bottom">
-                                                                <b>48 000 so'm</b>
-                                                                <button class="add-book" data-name="O'zingni angla" data-price="48000">
-                                                                    <i class="fa-solid fa-cart-plus"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+      <section class="gallery section" id="gallery">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">GALEREYA</span>
+            <h2>Kitoblar <span>olamidan</span></h2>
+            <p>Mutolaa qilish uchun ilhom beruvchi muhit.</p>
+          </div>
 
-                                                    <div class="book-card">
-                                                        <div class="book-image">
-                                                            <img src="https://images.unsplash.com/photo-1513001900722-370f803f498d?auto=format&fit=crop&w=600&q=85" alt="Kelajak sari kitobi">
-                                                        </div>
-                                                        <div class="book-info">
-                                                            <span>Motivatsiya</span>
-                                                            <h3>Kelajak sari</h3>
-                                                            <p>Kelajagingizni bugundan boshlab yarating.</p>
-                                                            <div class="book-bottom">
-                                                                <b>55 000 so'm</b>
-                                                                <button class="add-book" data-name="Kelajak sari" data-price="55000">
-                                                                    <i class="fa-solid fa-cart-plus"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+          <div class="gallery-grid">
+            <img
+              src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=700&q=85"
+              alt="Kutubxona"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=700&q=85"
+              alt="Kitob o'qish"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=700&q=85"
+              alt="Kitob javoni"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=700&q=85"
+              alt="Kitoblar"
+            />
+          </div>
+        </div>
+      </section>
 
-                                                    <div class="book-card">
-                                                        <div class="book-image">
-                                                            <img src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?auto=format&fit=crop&w=600&q=85" alt="Sirli olam kitobi">
-                                                        </div>
-                                                        <div class="book-info">
-                                                            <span>Badiiy adabiyot</span>
-                                                            <h3>Sirli olam</h3>
-                                                            <p>Hayratlanarli voqealar olamiga sayohat.</p>
-                                                            <div class="book-bottom">
-                                                                <b>42 000 so'm</b>
-                                                                <button class="add-book" data-name="Sirli olam" data-price="42000">
-                                                                    <i class="fa-solid fa-cart-plus"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+      <section class="newsletter">
+        <div class="container newsletter-content">
+          <div>
+            <span class="section-label">YANGILIKLAR</span>
+            <h2>Yangiliklardan xabardor bo'ling</h2>
+            <p>Yangi kitoblar va chegirmalar haqida ma'lumot oling.</p>
+          </div>
 
-                                                </div>
-                                            </div>
-                                        </section>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Email manzilingiz" />
+            <button type="submit">Obuna bo'lish</button>
+          </form>
+        </div>
+      </section>
 
-                                        <section class="quote-section">
-                                            <div class="container quote-content">
-                                                <i class="fa-solid fa-quote-left"></i>
-                                                <h2>Kitob o'qigan inson minglab hayotlarni yashaydi.</h2>
-                                                <p>Kitob — bilim va tafakkur manbai.</p>
-                                            </div>
-                                        </section>
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">ALOQA</span>
+            <h2>Biz bilan <span>bog'laning</span></h2>
+            <p>Savollaringiz bo'lsa, bizga murojaat qiling.</p>
+          </div>
 
-                                        <section class="gallery section" id="gallery">
-                                            <div class="container">
-                                                <div class="section-heading">
-                                                    <span class="section-label">GALEREYA</span>
-                                                    <h2>Kitoblar <span>olamidan</span></h2>
-                                                    <p>Mutolaa qilish uchun ilhom beruvchi muhit.</p>
-                                                </div>
+          <div class="contact-grid">
+            <div class="contact-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <h3>Manzil</h3>
+              <p>Namangan</p>
+            </div>
 
-                                                <div class="gallery-grid">
-                                                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=700&q=85" alt="Kutubxona">
-                                                    <img src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=700&q=85" alt="Kitob o'qish">
-                                                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=700&q=85" alt="Kitob javoni">
-                                                    <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=700&q=85" alt="Kitoblar">
-                                                </div>
-                                            </div>
-                                        </section>
+            <div class="contact-card">
+              <i class="fa-solid fa-phone"></i>
+              <h3>Telefon</h3>
+              <p>+998 70 075 70 71</p>
+            </div>
 
-                                        <section class="newsletter">
-                                            <div class="container newsletter-content">
-                                                <div>
-                                                    <span class="section-label">YANGILIKLAR</span>
-                                                    <h2>Yangiliklardan xabardor bo'ling</h2>
-                                                    <p>Yangi kitoblar va chegirmalar haqida ma'lumot oling.</p>
-                                                </div>
+            <div class="contact-card">
+              <i class="fa-solid fa-envelope"></i>
+              <h3>Email</h3>
+              <p>onlybooks@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-                                                <form class="newsletter-form">
-                                                    <input type="email" placeholder="Email manzilingiz">
-                                                    <button type="submit">Obuna bo'lish</button>
-                                                </form>
-                                            </div>
-                                        </section>
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <i class="fa-solid fa-book-open"></i>
+            ONLY<span>BOOKS</span>
+          </a>
+          <p>Kitoblar orqali bilim oling va yangi olamlarni kashf eting.</p>
+        </div>
 
-                                        <section class="contact section" id="contact">
-                                            <div class="container">
-                                                <div class="section-heading">
-                                                    <span class="section-label">ALOQA</span>
-                                                    <h2>Biz bilan <span>bog'laning</span></h2>
-                                                    <p>Savollaringiz bo'lsa, bizga murojaat qiling.</p>
-                                                </div>
+        <div class="footer-links">
+          <h3>Tezkor havolalar</h3>
+          <a href="#home">Bosh sahifa</a>
+          <a href="#about">Biz haqimizda</a>
+          <a href="#books">Kitoblar</a>
+          <a href="#contact">Aloqa</a>
+        </div>
 
-                                                <div class="contact-grid">
-                                                    <div class="contact-card">
-                                                        <i class="fa-solid fa-location-dot"></i>
-                                                        <h3>Manzil</h3>
-                                                        <p>Namangan</p>
-                                                    </div>
+        <div class="footer-social">
+          <h3>Ijtimoiy tarmoqlar</h3>
+          <div>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
 
-                                                    <div class="contact-card">
-                                                        <i class="fa-solid fa-phone"></i>
-                                                        <h3>Telefon</h3>
-                                                        <p>+998 70 075 70 71</p>
-                                                    </div>
+      <div class="container footer-bottom">
+        <p>© 2026 ONLY BOOKS. Barcha huquqlar himoyalangan.</p>
+      </div>
+    </footer>
 
-                                                    <div class="contact-card">
-                                                        <i class="fa-solid fa-envelope"></i>
-                                                        <h3>Email</h3>
-                                                        <p>onlybooks@gmail.com</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
+    <div class="cart-overlay" id="cartOverlay">
+      <div class="cart-box">
+        <div class="cart-heading">
+          <h2>Savatcha</h2>
+          <button id="closeCart">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
 
-                                    </main>
+        <div class="cart-body">
+          <div id="cartItems">Hozircha savatcha bo'sh.</div>
 
-                                    <footer class="footer">
-                                        <div class="container footer-content">
-                                            <div class="footer-brand">
-                                                <a href="#" class="logo">
-                                                    <i class="fa-solid fa-book-open"></i>
-                                                    ONLY<span>BOOKS</span>
-                                                </a>
-                                                <p>Kitoblar orqali bilim oling va yangi olamlarni kashf eting.</p>
-                                            </div>
+          <div class="cart-total">
+            <span>Jami:</span>
+            <b id="cartTotal">0 so'm</b>
+          </div>
 
-                                            <div class="footer-links">
-                                                <h3>Tezkor havolalar</h3>
-                                                <a href="#home">Bosh sahifa</a>
-                                                <a href="#about">Biz haqimizda</a>
-                                                <a href="#books">Kitoblar</a>
-                                                <a href="#contact">Aloqa</a>
-                                            </div>
+          <button class="checkout-button" id="checkoutButton">
+            Buyurtma berish
+          </button>
+        </div>
+      </div>
+    </div>
 
-                                            <div class="footer-social">
-                                                <h3>Ijtimoiy tarmoqlar</h3>
-                                                <div>
-                                                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
-                                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="container footer-bottom">
-                                            <p>© 2026 ONLY BOOKS. Barcha huquqlar himoyalangan.</p>
-                                        </div>
-                                    </footer>
-
-                                    <div class="cart-overlay" id="cartOverlay">
-                                        <div class="cart-box">
-                                            <div class="cart-heading">
-                                                <h2>Savatcha</h2>
-                                                <button id="closeCart">
-                                                    <i class="fa-solid fa-xmark"></i>
-                                                </button>
-                                            </div>
-
-                                            <div class="cart-body">
-                                                <div id="cartItems">
-                                                    Hozircha savatcha bo'sh.
-                                                </div>
-
-                                                <div class="cart-total">
-                                                    <span>Jami:</span>
-                                                    <b id="cartTotal">0 so'm</b>
-                                                </div>
-
-                                                <button class="checkout-button" id="checkoutButton">
-                                                    Buyurtma berish
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <script src="script.js"></script>
-                                </body>
-                                </html>
+    <script src="script.js"></script>
+  </body>
+</html>
